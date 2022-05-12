@@ -15,9 +15,8 @@ fn main() {
 
     if !is_english(&args[1]) {
         println!("{} is not english", args[1]);
-        process::exit(-1);
+        process::exit(1);
     }
-
     let input = &args[1];
 
     println!("{}", to_pig_latin(input));
